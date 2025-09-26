@@ -4,128 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cadet Colleges Guide — Home</title>
-
-  <!-- Simple embedded CSS so site looks good without extra files -->
-  <style>
-    :root{
-      --accent:#1f6f4d;
-      --dark:#0b2a2a;
-      --muted:#6b6b6b;
-      --bg:#f6f8f7;
-      --card:#ffffff;
-      --radius:12px;
-      --maxw:980px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
-      background:var(--bg);color:var(--dark);line-height:1.45;
-    }
-
-    .container{max-width:var(--maxw);margin:0 auto;padding:20px;}
-
-    /* Header */
-    .site-header{
-      background:linear-gradient(135deg,#0b3b2e,#123d3a);
-      color:white;padding:28px 0;border-bottom:4px solid rgba(0,0,0,0.06);
-    }
-    .site-header .container{display:flex;flex-direction:column;gap:8px}
-    .site-title{margin:0;font-size:1.6rem}
-    .tagline{margin:0;opacity:0.95;font-weight:500}
-
-    /* Navigation */
-    nav{display:flex;gap:10px;flex-wrap:wrap}
-    nav a{color:rgba(255,255,255,0.95);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600}
-    nav a.active{background:rgba(255,255,255,0.08)}
-
-    /* Hero card */
-    .hero{background:var(--card);border-radius:var(--radius);padding:20px;margin-top:16px;box-shadow:0 8px 20px rgba(10,20,20,0.05)}
-    .hero h2{margin:0 0 8px 0}
-    .lead{color:var(--muted);margin:0 0 12px 0}
-
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
-    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 14px rgba(10,20,20,0.03)}
-    .cta{display:inline-block;background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
-
-    .video-preview{border-radius:10px;overflow:hidden}
-    .video-preview img{width:100%;display:block}
-
-    footer{padding:22px 0;color:var(--muted);text-align:center;margin-top:18px}
-
-    /* Responsive */
-    @media(max-width:820px){
-      .grid{grid-template-columns:1fr}
-      .site-title{font-size:1.2rem}
-    }
-  </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <div>
-        <h1 class="site-title">Cadet Colleges Guide — Your Path to Success</h1>
-        <p class="tagline">Information, step-by-step admission help, videos and free notes — by Cadet 26013 (Highbrows Pre-Cadet School)</p>
-      </div>
-
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="admission.html">Admission</a>
-        <a href="videos.html">Videos</a>
-        <a href="notes.html">Notes</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Cadet Colleges Guide — Your Path to Success</h1>
+    <p>Information, admission help, videos and notes — by Cadet 26013 (Highbrows Pre-Cadet School)</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="admission.html">Admission</a> |
+      <a href="videos.html">Videos</a> |
+      <a href="notes.html">Notes</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- Main -->
-  <main class="container">
-    <section class="hero">
-      <h2>Welcome — Start your cadet college journey</h2>
-      <p class="lead">This site helps students and parents understand cadet colleges, the admission process, and provides free study notes and video guides. Start with the Admission Guide or watch our quick video walkthroughs.</p>
-      <p><a class="cta" href="admission.html">Read Admission Guide</a> <a style="margin-left:10px;text-decoration:none;color:var(--accent);" href="videos.html">Watch Videos</a></p>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h3>Why cadet colleges?</h3>
-        <p>Cadet colleges combine strong academics with discipline and leadership training. They prepare students for the armed forces and for leadership roles in civilian life.</p>
-        <ul>
-          <li>Quality education and structured life</li>
-          <li>Focus on physical fitness and character</li>
-          <li>Competitive environment and exams</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Quick resources</h3>
-        <p>Use these links to jump straight into important sections:</p>
-        <ul>
-          <li><a href="admission.html">Admission steps & tips</a></li>
-          <li><a href="notes.html">Math, English & GK notes (PDFs)</a></li>
-          <li><a href="videos.html">Admission process videos</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Optional small preview section for latest video (replace thumbnail and link later) -->
-    <section style="margin-top:16px">
-      <div class="card">
-        <h3>Latest video (preview)</h3>
-        <p>Upload your videos to YouTube and embed on the Videos page. Below is a placeholder preview — update the thumbnail and link when your video is ready.</p>
-        <div class="video-preview">
-          <a href="videos.html" title="Watch admission walkthrough"><img src="https://via.placeholder.com/800x450?text=Video+Preview+Placeholder" alt="Video preview"></a>
-        </div>
-      </div>
-    </section>
-
+  <!-- Main content -->
+  <main>
+    <h2>Welcome — Start your cadet college journey</h2>
+    <p>This site helps students and parents understand cadet colleges, the admission process, and provides free study notes and video guides.</p>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>Made by Cadet 26013 • Highbrows Pre-Cadet School • Contact: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
-    </div>
+    <p>Made by Cadet 26013 • Highbrows Pre-Cadet School</p>
   </footer>
 </body>
 </html>
