@@ -11,11 +11,16 @@
       padding: 0;
       background-color: #f4f4f4;
     }
+
+    /* Header */
     header {
-      background-color: #013220; /* Military green */
-      color: white;
+      background-color: #0b3d2e; /* Deep Military Green */
+      color: #ffd700; /* Golden accent */
       text-align: center;
-      padding: 30px;
+      padding: 25px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav {
       margin-top: 10px;
@@ -25,90 +30,36 @@
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: #ffd700;
     }
+
+    /* Hero Section */
     .hero {
+      position: relative;
       background-image: url("https://i.ibb.co/jfYPMVj/cadets-parade.jpg");
       background-size: cover;
       background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 5px black;
-    }
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-      text-shadow: 1px 1px 4px black;
-    }
-    .content {
-      padding: 40px;
-      text-align: center;
-    }
-    .content h2 {
-      color: #013220;
-      margin-bottom: 20px;
-    }
-    .colleges {
+      height: 70vh;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .college-box {
-      background: white;
-      padding: 20px;
-      border: 2px solid #013220;
-      border-radius: 10px;
-      width: 200px;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #013220;
-      color: white;
+      align-items: center;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      color: white;
     }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Cadet Colleges Guide</h1>
-    <p>By Cadet 26013</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="admission.html">Admissions</a>
-      <a href="notes.html">Notes</a>
-      <a href="videos.html">Videos</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Welcome to Cadet Life</h1>
-    <p>This platform helps students and parents understand the admission process, life, and opportunities in top cadet colleges of Pakistan.</p>
-  </section>
-
-  <section class="content">
-    <h2>Top Cadet Colleges</h2>
-    <div class="colleges">
-      <div class="college-box">Cadet College Hasanabdal</div>
-      <div class="college-box">Military College Jhelum</div>
-      <div class="college-box">PAF College Sargodha</div>
-      <div class="college-box">Military College Murree</div>
-      <div class="college-box">PAF College Lower Topa</div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Cadet 26
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* Dark overlay */
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px blac
