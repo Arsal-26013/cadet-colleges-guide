@@ -3,166 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadet Colleges Guide - By Cadet 26013</title>
+  <title>Cadet 26013 - Cadet Colleges Portal</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background-color: #f4f4f4;
+      color: #222;
     }
 
-    /* Header */
     header {
-      background-color: #0b3d2e; /* Deep Military Green */
-      color: #ffd700; /* Golden accent */
-      text-align: center;
-      padding: 25px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      background: url("https://images.unsplash.com/photo-1529070538774-1843cb3265df") no-repeat center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
     }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
     nav {
-      margin-top: 10px;
+      background: #0d3b66;
+      padding: 10px;
+      text-align: center;
     }
+
     nav a {
       color: white;
+      text-decoration: none;
       margin: 0 15px;
-      text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #ffd700;
     }
 
-    /* Hero Section */
-    .hero {
-      position: relative;
-      background-image: url("https://i.ibb.co/jfYPMVj/cadets-parade.jpg");
-      background-size: cover;
-      background-position: center;
-      height: 70vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    section {
+      padding: 40px;
       text-align: center;
-      color: white;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.5); /* Dark overlay */
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 8px black;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
-    .btn {
-      background: #ffd700;
-      color: #0b3d2e;
-      padding: 12px 25px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: white;
-      color: #0b3d2e;
     }
 
-    /* Content Section */
-    .content {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    .content h2 {
-      color: #0b3d2e;
-      margin-bottom: 30px;
-      font-size: 28px;
-    }
-    .colleges {
+    .gallery {
       display: flex;
-      justify-content: center;
-      gap: 25px;
+      justify-content: space-around;
       flex-wrap: wrap;
-    }
-    .college-box {
-      background: white;
-      padding: 20px;
-      border: 2px solid #0b3d2e;
-      border-radius: 12px;
-      width: 220px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .college-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 2px 5px 15px rgba(0,0,0,0.2);
+      gap: 15px;
     }
 
-    /* Footer */
+    .gallery img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .video iframe {
+      width: 560px;
+      height: 315px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .highlight-box {
+      background: #0d3b66;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .colleges ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .colleges li {
+      background: #eee;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .quote {
+      background: #1b4332;
+      color: white;
+      padding: 20px;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
     footer {
-      background-color: #0b3d2e;
+      background: #0d3b66;
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 20px;
-      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
-    <h1>Cadet Colleges Guide</h1>
-    <p>By Cadet 26013</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="admission.html">Admissions</a>
-      <a href="notes.html">Notes</a>
-      <a href="videos.html">Videos</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>Welcome to Cadet 26013's Portal</h1>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Cadet Life</h1>
-      <p>Guiding students and parents about admissions, tests, and opportunities in top cadet colleges of Pakistan.</p>
-      <a href="about.html" class="btn">Learn More</a>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Colleges</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1607083206968-136f9e6f7b59" alt="Cadets Parade">
+      <img src="https://images.unsplash.com/photo-1573497019579-2e02f2e3f3d3" alt="Military Training">
+      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Cadet College Campus">
+      <img src="https://images.unsplash.com/photo-1581091870627-3b35f4f9eeb5" alt="Motivated Cadets">
     </div>
   </section>
 
-  <!-- Main Content -->
-  <section class="content">
+  <section class="video">
+    <h2>Life at Cadet College</h2>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2>Why Join a Cadet College?</h2>
+    <div class="highlights">
+      <div class="highlight-box">🏫 Quality Education</div>
+      <div class="highlight-box">⚔️ Discipline & Training</div>
+      <div class="highlight-box">🤝 Leadership Skills</div>
+      <div class="highlight-box">🌍 Bright Future</div>
+    </div>
+  </section>
+
+  <section class="colleges">
     <h2>Top Cadet Colleges</h2>
-    <div class="colleges">
-      <div class="college-box">Cadet College Hasanabdal</div>
-      <div class="college-box">Military College Jhelum</div>
-      <div class="college-box">PAF College Sargodha</div>
-      <div class="college-box">Military College Murree</div>
-      <div class="college-box">PAF College Lower Topa</div>
-    </div>
+    <ul>
+      <li>Cadet College Hasanabdal</li>
+      <li>Military College Jhelum</li>
+      <li>PAF College Sargodha</li>
+      <li>Military College Murree</li>
+      <li>PAF College Lower Topa</li>
+    </ul>
   </section>
 
-  <!-- Footer -->
+  <div class="quote">
+    "Discipline, Courage, and Honor – This is the Cadet's Way!"
+  </div>
+
   <footer>
-    <p>© 2025 Cadet 26013 | Cadet Colleges Awareness Project</p>
+    <p>&copy; 2025 Cadet 26013 | All Rights Reserved</p>
   </footer>
 
 </body>
