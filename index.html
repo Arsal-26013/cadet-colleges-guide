@@ -62,4 +62,108 @@
     .hero h1 {
       font-size: 48px;
       margin-bottom: 20px;
-      text-shadow: 2px 2px 8px blac
+      text-shadow: 2px 2px 8px black;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      background: #ffd700;
+      color: #0b3d2e;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: white;
+      color: #0b3d2e;
+    }
+
+    /* Content Section */
+    .content {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .content h2 {
+      color: #0b3d2e;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .colleges {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .college-box {
+      background: white;
+      padding: 20px;
+      border: 2px solid #0b3d2e;
+      border-radius: 12px;
+      width: 220px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .college-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0b3d2e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Cadet Colleges Guide</h1>
+    <p>By Cadet 26013</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admission.html">Admissions</a>
+      <a href="notes.html">Notes</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Cadet Life</h1>
+      <p>Guiding students and parents about admissions, tests, and opportunities in top cadet colleges of Pakistan.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="content">
+    <h2>Top Cadet Colleges</h2>
+    <div class="colleges">
+      <div class="college-box">Cadet College Hasanabdal</div>
+      <div class="college-box">Military College Jhelum</div>
+      <div class="college-box">PAF College Sargodha</div>
+      <div class="college-box">Military College Murree</div>
+      <div class="college-box">PAF College Lower Topa</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Cadet 26013 | Cadet Colleges Awareness Project</p>
+  </footer>
+
+</body>
+</html>
